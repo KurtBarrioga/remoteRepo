@@ -1,3 +1,14 @@
+<?php
+	$mysqli = new mysqli("localhost", 'root', '', 'student')
+	$errornum = mysqli_connect_errorno();
+	if ($errornum)
+	{
+		$errormsg = mysqli_connect_errorno();
+		print "Connection Failed. error number = $errornum"."<br /> error message=$errormsg";
+		exit()
+	}
+?>
+
 <html>
 
 <head>
